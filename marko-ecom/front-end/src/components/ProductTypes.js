@@ -26,12 +26,17 @@ const ProductTypes = () => {
 
   const { nodes: categories } = data.allStrapiCategory
 
+  console.log(categories)
+
 
   const categoryRender = categories.map((category, index) => {
+
+      console.log('IMAGE: ', getImage(category.icon[0].localFile))
+
     return (
       <li key={index}>
         <Link to={category.url}>
-          <GatsbyImage alt={category.title} image={getImage(category.icon.localFile)}/>
+          <GatsbyImage alt={category.title} image={getImage(category.icon[0].localFile)}/>
           <h3 className="product-heading">{category.title}</h3>
           <p>Более {category.qty} моделей</p>
         </Link>
