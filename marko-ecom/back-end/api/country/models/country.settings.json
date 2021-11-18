@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "countries",
+  "info": {
+    "name": "country"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "country_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "country_code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "country_iso": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
