@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_size_size_inside_boxes",
+  "info": {
+    "name": "size_inside_box",
+    "icon": "ruler"
+  },
+  "options": {},
+  "attributes": {
+    "size": {
+      "type": "decimal"
+    },
+    "bar_code": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    }
+  }
+}

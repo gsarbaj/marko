@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fabric-linings",
+      "handler": "fabric-lining.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fabric-linings/count",
+      "handler": "fabric-lining.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fabric-linings/:id",
+      "handler": "fabric-lining.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fabric-linings",
+      "handler": "fabric-lining.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fabric-linings/:id",
+      "handler": "fabric-lining.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fabric-linings/:id",
+      "handler": "fabric-lining.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
