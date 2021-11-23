@@ -2,7 +2,8 @@
   "collectionName": "components_size_size_inside_boxes",
   "info": {
     "name": "size_inside_box",
-    "icon": "ruler"
+    "icon": "ruler",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,6 +14,9 @@
       "type": "biginteger",
       "required": true,
       "unique": true
+    },
+    "size_qty": {
+      "type": "integer"
     }
   }
 }

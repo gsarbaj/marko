@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/fabrics",
-      "handler": "fabric.find",
+      "path": "/seasons",
+      "handler": "season.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/fabrics/count",
-      "handler": "fabric.count",
+      "path": "/seasons/count",
+      "handler": "season.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/fabrics/:id",
-      "handler": "fabric.findOne",
+      "path": "/seasons/:id",
+      "handler": "season.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/fabrics",
-      "handler": "fabric.create",
+      "path": "/seasons",
+      "handler": "season.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/fabrics/:id",
-      "handler": "fabric.update",
+      "path": "/seasons/:id",
+      "handler": "season.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/fabrics/:id",
-      "handler": "fabric.delete",
+      "path": "/seasons/:id",
+      "handler": "season.delete",
       "config": {
         "policies": []
       }

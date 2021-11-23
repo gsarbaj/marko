@@ -27,15 +27,100 @@
       "repeatable": true,
       "component": "size.size-inside-box"
     },
-    "picture": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+    "fatness": {
+      "type": "integer",
+      "default": 8,
+      "required": true,
+      "unique": true,
+      "max": 15,
+      "min": 1
+    },
+    "fabric_external": {
+      "type": "string"
+    },
+    "fabric_inner": {
+      "type": "string",
+      "required": true
+    },
+    "fabric_sole": {
+      "type": "string"
+    },
+    "fabric_insole": {
+      "type": "string"
+    },
+    "taric": {
+      "type": "string"
+    },
+    "price_base": {
+      "type": "biginteger",
+      "required": true,
+      "min": "1",
+      "default": "1"
+    },
+    "vat_pct": {
+      "type": "integer",
+      "required": true,
+      "default": 20
+    },
+    "box_type": {
+      "type": "integer",
+      "required": true,
+      "default": 1,
+      "max": 2,
+      "min": 1
+    },
+    "box_volume": {
+      "type": "biginteger"
+    },
+    "box_weight_g": {
+      "type": "biginteger"
+    },
+    "box_length_mm": {
+      "type": "biginteger"
+    },
+    "box_width_mm": {
+      "type": "biginteger"
+    },
+    "box_height_mm": {
+      "type": "biginteger"
+    },
+    "box_qty": {
+      "type": "integer"
+    },
+    "country": {
+      "model": "country"
+    },
+    "brand": {
+      "model": "brand"
+    },
+    "category": {
+      "model": "category"
+    },
+    "color": {
+      "model": "color"
+    },
+    "gender": {
+      "model": "gender"
+    },
+    "producer": {
+      "model": "producer"
+    },
+    "season": {
+      "model": "season"
+    },
+    "type": {
+      "model": "type"
+    },
+    "pictures": {
+      "type": "json"
+    },
+    "cert": {
+      "type": "component",
+      "repeatable": false,
+      "component": "cert.cert"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

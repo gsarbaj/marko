@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_cert_certs",
+  "info": {
+    "name": "cert",
+    "icon": "passport"
+  },
+  "options": {},
+  "attributes": {
+    "cert_number": {
+      "type": "string"
+    },
+    "cert_org": {
+      "type": "string"
+    },
+    "cert_blank": {
+      "type": "string"
+    },
+    "cert_date": {
+      "type": "date"
+    },
+    "expire": {
+      "type": "date"
+    }
+  }
+}

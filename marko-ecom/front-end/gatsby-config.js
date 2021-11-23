@@ -27,9 +27,9 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `https://marko-opt.herokuapp.com`,
+        apiURL: `https://marko-opt.herokuapp.com`, //`https://marko-opt.herokuapp.com`
         queryLimit: 1000, // Defaults to 100
-        collectionTypes: [`category`],
+        collectionTypes: [`category`, `product`],
       },
     },
     {
